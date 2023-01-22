@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js" defer></script>
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <h1>Lienzo para dibujar</h1>
+    <div class="pantalla">
+        <div class="estilos">
+            <input type="range" name="cantidadPx" id="cantidadPx" min="3" max="99" step="3">
+            <label for="cantidadPx">Pixeles: <output id="valor"></output></label>
+            <input type="color" id="color">
+            <button id="borrador">Borrador</button>
+            <button id="randon">Colores Aleatorios</button>
+            <button id="limpiar">Limpiar</button>
+        </div>
+        <div class="contenedor">
+            <div id="lienzo" class="lienzo"></div>
+        </div>
+    </div>
+</body>
+</html>
